@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css"
+        integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Morning Dashboard</title>
+</head>
+
+  <body>
+    <div id="layout">
+      <a href="#menu" id="menuLink" class="menu-link">
+        <span></span>
+      </a>
+
+      <div id="menu">
+        <div class="pure-menu" id='menu'>
+          <button class="pure-menu-heading userName" id="username-button"></button>
+          <button class="pure-menu-heading" id="city-button"></button>
+          <button class="pure-menu-heading" id="commute-button">Commute</button>
+        </div>
+      </div>
+
+      <div id="main">
+        <div class="header">
+          <h1>Morning Dashboard</h1>
+          <h2>Welcome&#32;<span class="userName">New User</span>!</h2>
+        </div>
+
+        <div class="content">
+          <!-- <h2 class="content-subhead">Using the Application</h2>
+          <p>This area would house the inital map or weather</p> -->
+          <div id="map"></div>
+          <div id='weather-and-travel'>
+            <div id='weather'></div>
+            <div id='travel'></div>
+          </div>
+        </div>
+    </div>
+  </div>
+    <div class="modal">
+      <div class="modal-content">
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/openRoute.js"></script>
+    <script src="./assets/js/menu.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5o7fDUVsLBHr8AEWT2N3_cXSOa_6n-Mc&callback=initMap&libraries=&v=weekly"
+        async></script>
+</body>
+
+</html>
