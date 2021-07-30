@@ -1,5 +1,14 @@
+body,
+html {
+  height: 100%;
+  /* background-image: url("../images/menu-background.jpg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 body {
-  color: rgb(0, 0, 0);
+  background-image: url("../images/menu-background.jpg");
 }
 
 .pure-img-responsive {
@@ -7,6 +16,7 @@ body {
   height: auto;
 }
 
+/*Comment*/
 #layout,
 #menu,
 .menu-link {
@@ -36,6 +46,9 @@ This is the parent `<div>` that contains the menu and the content area.
 /*
 The content `<div>` is where all your content goes.
 */
+.content {
+  height: 100%;
+}
 
 /*
 The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
@@ -52,35 +65,25 @@ appears on the left side of the page.
   z-index: 1000; /* so the menu or its navicon stays above all content */
   background: rgba(0, 0, 0, 0.4);
   overflow-y: auto;
-}
-/*
-    All anchors inside the menu should be styled like this.
-    */
-#menu a {
-  color: #999;
-  border: none;
-  padding: 0.6em 0 0.6em 0.6em;
+  opacity: 0.8;
 }
 
 /*
     Remove all background/borders, since we are applying them to #menu.
     */
 #menu .pure-menu {
-  background-color: rgb(1, 191, 255);
+  background-color: rgba(1, 192, 255, 0.39);
   padding: 0px;
-}
-#menu .pure-menu ul {
-  border: none;
-  background: transparent;
 }
 
 /*
-    Add that light border to separate items into groups.
+    Add ~that~ light border to separate items into groups.
     */
 #menu .pure-menu ul,
 #menu .pure-menu .menu-item-divided {
   border-top: 1px solid #333;
 }
+
 /*
         Change color of the anchor links on hover/focus.
         */
@@ -94,12 +97,12 @@ appears on the left side of the page.
     */
 #menu .pure-menu-selected,
 #menu .pure-menu-heading {
-  background: #1f8dd6;
+  background: black;
 }
 /*
         This styles a link within a selected menu item `<li>`.
         */
-#menu .pure-menu-selected a {
+#menu .pure-menu-selected button {
   color: #fff;
 }
 
@@ -114,6 +117,7 @@ appears on the left side of the page.
   padding: 25px;
 }
 
+/**/
 .menu-link {
   position: relative;
   display: block; /* show this only on small screens */
@@ -225,7 +229,6 @@ Hides the menu at `48em`, but modify this based on your app's needs.
     border-bottom: solid rgb(0, 0, 0) 4px;
     padding: 10px 20px;
     background-color: rgb(13, 157, 227);
-
     justify-content: space-between;
     flex-wrap: wrap;
     position: sticky;
@@ -242,7 +245,9 @@ Hides the menu at `48em`, but modify this based on your app's needs.
   }
 
   #layout {
-    background-image: url(https://images.unsplash.com/photo-1575380591643-b2c92368dc6d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2t5bGluZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80);
+    /* background-image: url(https://images.unsplash.com/photo-1575380591643-b2c92368dc6d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2t5bGluZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80); */
+
+    /* background-image: url("../images/menu-background.jpg"); */
     background-repeat: no-repeat;
     background-size: 100%;
     padding-left: 150px; /* left col width "#menu" */
